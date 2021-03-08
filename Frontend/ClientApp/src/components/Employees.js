@@ -25,7 +25,6 @@ export class Employees extends Component {
     }
 
     setEmployeeId = (event) => {
-        debugger;
         this.setState({ idEmployee: event.target.value, loading: false });
     }
 
