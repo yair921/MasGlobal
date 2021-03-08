@@ -48,7 +48,7 @@ export class Employees extends Component {
                             <td>{employee.name}</td>
                             <td>{employee.contractTypeName}</td>
                             <td>{employee.roleName}</td>
-                            <td>{employee.annualSalary}</td>
+                            <td>{employee.annualSalary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
                         </tr>
                     )}
                 </tbody>
